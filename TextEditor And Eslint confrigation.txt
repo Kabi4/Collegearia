@@ -1,6 +1,6 @@
 {
     {
-        Filename: .prettierrc,
+        Filename: .prettierrc, 
         confriguation: { 
             "singleQuote": true,
   "tabWidth": 4,
