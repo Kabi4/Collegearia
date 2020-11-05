@@ -1,0 +1,34 @@
+.navitemoption{
+    padding: 10px 0px;
+    border-top: 1px solid white;
+    display: block;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navitemoption:last-of-type{
+    border-bottom: 2px solid white;
+}
+
+.navitemoption:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+@media(max-width: 1200px){
+    
+    .navitemoption{
+        width: 150px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+}
+
+@media(max-width: 1050px){
+    .navitemoption{
+        width: 120px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
