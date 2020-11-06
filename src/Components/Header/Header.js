@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 import Logo from './../../Assets/Images/Logo.png';
-import { Button } from '@material-ui/core';
+import { Button, IconButton } from '@material-ui/core';
 import { NavItem } from '../index';
-const Header = () => {
+import MenuIcon from '@material-ui/icons/Menu';
+const Header = React.memo(() => {
+    const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 750px)').matches);
+    const [showHeader, setShowHeader] = useState(true);
+    useEffect(() => {
+        let watchMedia = window.matchMedia('(max-width: 750px)');
+        const listener = watchMedia.addListener(() => {
+            setIsMobile(window.matchMedia('(max-width: 750px)').matches);
+        });
+        return () => {
+            watchMedia.removeListener(listener);
+            watchMedia = null;
+        };
+    }, []);
+
     return (
-        <div className="header">
+        <div style={{ left: isMobile && showHeader ? '-100%' : '0' }} className={`header ${isMobile && 'mobile'}`}>
+            {isMobile && (
+                <IconButton
+                    onClick={() => {
+                        if (isMobile) {
+                            setShowHeader(!showHeader);
+                        }
+                    }}
+                    className="header__menubutton"
+                >
+                    <MenuIcon />
+                </IconButton>
+            )}
             <img className="header__logo" src={Logo} alt="Logo" />
             <h2 className="header__title">Collegearia</h2>
             <nav className="header__nav">
@@ -33,6 +59,6 @@ const Header = () => {
             </Button>
         </div>
     );
-};
+});
 
 export default Header;

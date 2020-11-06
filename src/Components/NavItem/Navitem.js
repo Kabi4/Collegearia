@@ -5,7 +5,7 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import { Backdrop } from '../../Utils/index';
 import { NacItemOptions } from '../index';
 import FlipMove from 'react-flip-move';
-const Navitem = ({ children, isExpandable, options }) => {
+const Navitem = React.memo(({ children, isExpandable, options }) => {
     const [showIcons, setShowIcons] = useState(false);
     return (
         <div className="navitem">
@@ -41,6 +41,6 @@ const Navitem = ({ children, isExpandable, options }) => {
             </div>
         </div>
     );
-};
+});
 
 export default Navitem;
