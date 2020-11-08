@@ -81,3 +81,13 @@
 .navitem > *{
     margin-bottom: 4px;
 }
+
+
+
+@supports not (backdrop-filter: blur(8px)){
+    .active{
+        font-size: 22px !important;
+        font-weight: 900 !important;
+        width: 200px !important;
+    }
+}

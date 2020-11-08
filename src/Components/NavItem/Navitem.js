@@ -21,6 +21,7 @@ const Navitem = React.memo(({ children, isExpandable, options }) => {
                 )}
             </FlipMove>
             <span
+                className={`${showIcons && 'active'}`}
                 onClick={() =>
                     setShowIcons((prevState) => {
                         return !prevState;
@@ -31,7 +32,7 @@ const Navitem = React.memo(({ children, isExpandable, options }) => {
                 {children}
                 {isExpandable && (showIcons ? <ExpandLessIcon /> : <ExpandMoreIcon />)}
             </span>
-            <div className="navItemOptions" style={{ zIndex: showIcons ? '400' : '0' }}>
+            <div className={`navItemOptions`} style={{ zIndex: showIcons ? '400' : '0' }}>
                 <FlipMove enterAnimation="accordionVertical" leaveAnimation="accordionVertical">
                     {showIcons &&
                         options.map((ele, index) => {

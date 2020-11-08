@@ -9,10 +9,12 @@ export const GlobalStyles = createGlobalStyle`
         background-color:#1C8E77;
         color: white;
         line-height:1;
+        overflow-x: hidden;
     }
     *,*::after,*::before{
         padding: 0;
         margin:0;
         box-sizing: border-box;
+        
     }
 `;

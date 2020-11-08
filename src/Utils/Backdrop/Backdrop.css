@@ -8,3 +8,14 @@
     z-index: 100;
     backdrop-filter: blur(8px);
 }
+
+@supports not (backdrop-filter: blur(8px)){
+    .backdrop{
+        background-image: linear-gradient(to right ,rgba(0, 0, 0,0.8),rgba(255, 255, 255,0.8)),url(./../../Assets//Images//Body.jpg);
+        
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: color;
+    }
+}
