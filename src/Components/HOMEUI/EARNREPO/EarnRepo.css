@@ -1,0 +1,143 @@
+.earnRepo{
+    width: 100vw;
+    min-height: 65vh;
+    background-image: url(./../../../Assets/Images/Repo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    padding: 30px;
+}
+
+.earnRepo__title{
+    color: #1C8E77;
+    text-align: center;
+    font-family: 'Syne Tactile', cursive;
+    user-select: none;
+    margin-bottom: 20px;
+}
+.earnRepo__details{
+    width: 50%;
+    font-family: 'Syne Tactile';
+    color: #263a36;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    line-height: 1.4;
+}
+.earnRepo__user{
+    margin: 20px auto;
+    color: #263a36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.earnRepo__Avatar{
+    margin-right: 10px;
+    color: skyblue;
+    font-size: 32px !important;
+}
+.earnRepo__name{
+    margin-right: 20px;
+}
+.earnRepo__bagde{
+    color: red;
+    position: relative;
+    font-size: 32px !important;
+}
+.earnRepo__badgeTitle{
+    font-size: 8px;
+    color: lawngreen;
+    font-weight: 900;
+    top: 100%;
+    left: 0;
+}
+.earnRepo__upgrade{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.earnRepo__likes{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.earnRepo__like{
+    color: lightgray;
+    font-size: 35px;
+    margin-right: 5px;
+    animation: lightUp 2s linear infinite;
+}
+
+.earnRepo__likes > span::after{
+    content: "234";
+    font-weight: 900;
+    color: rgb(68, 99, 240);
+    position: relative;
+    opacity: 1;
+    animation: oneAdd 2s linear infinite;
+}
+
+
+
+.earnRepo__stars__star{
+    fill: gold !important;
+}
+
+.last__star{
+    fill: black !important;
+    color: black !important;
+}
+.earnRepo__stars__star4{
+    color: black;
+    animation: starEarn 2s linear infinite;
+}
+@media (max-width: 950px){
+    .earnRepo__details{
+        width: 80%;}
+}
+
+@media (max-width: 480px){
+    .earnRepo__details{
+        width: 95%;}
+}
+
+@keyframes lightUp{
+    0%{
+        color: lightgray;
+    }
+    70%{
+        color: lightgray;
+    }
+    100%{
+        color: #065fd4;
+    }
+}
+
+@keyframes oneAdd {
+    0%{
+        content: "234";
+    }
+    70%{
+        content: "234";
+    }
+    100%{
+        content: "235";
+    }
+}
+
+
+
+@keyframes starEarn{
+    0%{
+        color: lightgray;
+    }
+    30%{
+        color: lightgray;
+    }
+    100%{
+        color: gold;
+    }
+}
