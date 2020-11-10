@@ -10,3 +10,4 @@ export { default as Footer } from './Footer/Footer';
 //UI
 export { default as EarnRepo } from './HOMEUI/EARNREPO/EarnRepo';
 export { default as PersonalApp } from './HOMEUI/YOUPRIVATECOLLEGEAPP/PRIVATEAPPDES';
+export { default as StudentMentorSection } from './HOMEUI/StudetnMentorSetion/StudentMentor';

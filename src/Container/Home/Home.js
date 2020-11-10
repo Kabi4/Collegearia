@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Body, EarnRepo, Footer, Header, PersonalApp } from './../../Components/index';
+import { Body, EarnRepo, Footer, Header, PersonalApp, StudentMentorSection } from './../../Components/index';
 import './Home.css';
 export default class Home extends Component {
     render() {
@@ -9,6 +9,7 @@ export default class Home extends Component {
                     <Header />
                     <Body />
                 </div>
+                <StudentMentorSection />
                 <PersonalApp />
                 <EarnRepo />
                 <Footer />
