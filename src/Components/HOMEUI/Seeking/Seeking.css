@@ -1,0 +1,100 @@
+.seeking{
+    min-height: 40vh;
+    position: relative;
+    width: 100vw;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./../../../Assets//Images//app-developer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: 'Syne Tactile', cursive;
+    color: #c22d46;
+    padding: 20px 10px;
+    text-align: center;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seeking__ele{
+    position: relative;
+    height: 120px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 15px;
+    animation: updown 3s linear infinite;
+    backface-visibility: hidden;
+}
+
+.seeking__ele__0{
+border: 2px #e12b38 solid;
+background-image: linear-gradient(to bottom right,rgba(74, 173, 201, 0.2),rgba(57, 198, 236, 0.5));
+}
+.seeking__ele__1{
+    border: 2px #107896 solid;
+    background-image: linear-gradient(to bottom right,rgba(225, 43, 56,0.2),rgba(225, 43, 56,0.7));
+}
+.seeking__ele__2{
+    border: 2px #C02F1D solid;
+    background-image: linear-gradient(to bottom right,rgba(229,107,31,0.2),rgba(229,107,31,0.5));
+}
+.seeking__ele__3{
+    border: 2px #E56B1f solid;
+    background-image: linear-gradient(to bottom right,rgba(62, 182, 80,0.2),rgba(62, 182, 80,0.5));
+}
+.seeking__ele__4{
+    border: 2px #3eb650 solid;
+    background-image: linear-gradient(to bottom right,rgba(225, 43, 56,0.2),rgba(225, 43, 56,0.5));
+}
+.seeking__button{
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    font-family: inherit !important;
+    text-transform: capitalize !important;
+    margin: 10px 0 !important;
+}
+
+.seeking__button__0{
+    color: #107896 !important;
+    background-color: #e12b38 !important;
+}
+
+
+.seeking__button__1{
+    color: #C02F1D !important;
+    background-color: #107896 !important;
+}
+
+.seeking__button__2{
+    color: #E56B1f !important;
+    background-color: #C02F1D !important;
+}
+
+.seeking__button__3{
+    color: #3eb650 !important;
+    background-color: #E56B1f !important;
+}
+
+.seeking__button__4{
+    color: #e12b38 !important;
+    background-color: #3eb650 !important;
+}
+
+@keyframes updown{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}

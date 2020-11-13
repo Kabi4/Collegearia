@@ -17,7 +17,7 @@ const StudentMentor = () => {
                         <p>Learn Courses</p>
                     </div>
                 </div>
-                <div className="studentMentor__card__back">
+                <div className="studentMentor__card__back studentMentor__card__back__1">
                     <h1>Sign Today</h1>
                     <Button className="studentMentor__card__button" focusRipple variant="outlined">
                         JOIN
@@ -37,7 +37,7 @@ const StudentMentor = () => {
                         <p>Reply To answers</p>
                     </div>
                 </div>
-                <div className="studentMentor__card__back">
+                <div className="studentMentor__card__back studentMentor__card__back__2">
                     <h1>Sign Today</h1>
                     <h2>Skill Description </h2>
                     <h2>or </h2>

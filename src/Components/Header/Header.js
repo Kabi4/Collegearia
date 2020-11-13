@@ -4,7 +4,7 @@ import Logo from './../../Assets/Images/Logo.png';
 import { Button, IconButton } from '@material-ui/core';
 import { NavItem } from '../index';
 import MenuIcon from '@material-ui/icons/Menu';
-const Header = React.memo(() => {
+const Header = React.memo((props) => {
     const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 750px)').matches);
     const [showHeader, setShowHeader] = useState(true);
     useEffect(() => {
@@ -55,7 +55,7 @@ const Header = React.memo(() => {
                 </NavItem>
             </nav>
             <Button className="header__button" variant="outlined">
-                Get Started
+                {props.pageCondition}
             </Button>
         </div>
     );
