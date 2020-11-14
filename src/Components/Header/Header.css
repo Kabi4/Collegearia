@@ -28,6 +28,7 @@
     border-radius: 10px !important;
     text-transform: capitalize !important;
     margin-right: 20px !important;
+    
 }
 
 .header__title{
@@ -73,4 +74,5 @@
     border-radius: 10px !important;
     text-transform: capitalize !important;
     margin-right: 20px !important;
+    z-index: 1000;
 }

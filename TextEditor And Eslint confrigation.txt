@@ -1,107 +1,30 @@
-{
+.prettierrc{
     {
-        Filename: .prettierrc, 
-        confriguation: { 
-            "singleQuote": true,
+  "singleQuote": true,
   "tabWidth": 4,
   "printWidth": 120
-            }
-    },
-    {
-        Filename: .eslintrc.json,
-        confriguation: {
-    "extends": ["airbnb", "prettier", "plugin:node/recommended"],
-    "plugins": ["prettier"],
-    "rules": {
-        "prettier/prettier": "error",
-        "spaced-comment": "off",
-        "no-console": "warn",
-        "consistent-return": "off",
-        "no-restricted-imports": [
-            "error",
-            "assert",
-            "buffer",
-            "child_process",
-            "cluster",
-            "crypto",
-            "dgram",
-            "dns",
-            "domain",
-            "events",
-            "freelist",
-            "fs",
-            "http",
-            "https",
-            "module",
-            "net",
-            "os",
-            "path",
-            "punycode",
-            "querystring",
-            "readline",
-            "repl",
-            "smalloc",
-            "stream",
-            "string_decoder",
-            "sys",
-            "timers",
-            "tls",
-            "tracing",
-            "tty",
-            "url",
-            "util",
-            "vm",
-            "zlib"
-        ],
-        "no-restricted-exports": [
-            "error",
-            "assert",
-            "buffer",
-            "child_process",
-            "cluster",
-            "crypto",
-            "dgram",
-            "dns",
-            "domain",
-            "events",
-            "freelist",
-            "fs",
-            "http",
-            "https",
-            "module",
-            "net",
-            "os",
-            "path",
-            "punycode",
-            "querystring",
-            "readline",
-            "repl",
-            "smalloc",
-            "stream",
-            "string_decoder",
-            "sys",
-            "timers",
-            "tls",
-            "tracing",
-            "tty",
-            "url",
-            "util",
-            "vm",
-            "zlib"
-        ],
-        "func-names": "off",
-        "object-shorthand": "off",
-        "no-process-exit": "off",
-        "no-param-reassign": "off",
-        "no-return-await": "off",
-        "no-underscore-dangle": "off",
-        "class-methods-use-this": "off",
-        "prefer-destructuring": ["error", { "object": true, "array": false }],
-        "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
-    }
+}
 }
 
-    }
-    dev-dependencies: {
-npm i eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-ally eslint-plugin-react eslint prettier --save-dev --force
+.eslintrc.json{
+    {
+  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "spaced-comment": "off",
+    "no-console": "warn",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
+  }
+}
+
 }

@@ -1,9 +1,9 @@
 import './App.css';
-import { Home } from './index';
+import { Home, Browse } from './index';
 function App() {
     return (
         <div className="App">
-            <Home />
+            <Browse />
         </div>
     );
 }

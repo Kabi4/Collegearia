@@ -1,0 +1,26 @@
+.sidebarOption{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;margin-top: 10px;
+    transition: all 0.2s linear;
+    border: transparent solid 1px;
+    user-select:none;
+    text-align: center;
+    margin: 10px;
+}
+.sidebarOption__icon{
+    font-size: 14px !important;
+    margin-right: 10px;
+}
+.sidebarOption__title{
+    font-size: 14px !important;
+}
+
+.sidebarOption:hover,.active{
+    color:#482ff7 !important;
+    background-color: lightgray !important;
+    border-bottom: #482ff7 solid 1px;
+    border-radius: 4px;
+}

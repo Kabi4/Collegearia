@@ -19,7 +19,10 @@ const Header = React.memo((props) => {
     }, []);
 
     return (
-        <div style={{ left: isMobile && showHeader ? '-100%' : '0' }} className={`header ${isMobile && 'mobile'}`}>
+        <div
+            style={{ left: isMobile && showHeader ? '-100%' : '0', zIndex: '1100' }}
+            className={`header ${isMobile && 'mobile'}`}
+        >
             {isMobile && (
                 <IconButton
                     onClick={() => {
