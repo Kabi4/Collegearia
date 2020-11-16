@@ -1,0 +1,30 @@
+.badges{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+}
+
+.noBagde{
+    font-family: 'Syne Tactile', cursive;
+    user-select: none;
+    cursor: progress;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: darkgray;
+    display: block;
+    text-align: center;
+    line-height: 1.6;
+}
+
+@media (max-width: 750px){
+    
+    .noBagde{
+        display: block;
+    }
+}

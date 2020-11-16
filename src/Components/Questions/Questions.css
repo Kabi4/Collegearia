@@ -1,11 +1,15 @@
 .questions{
     padding: 10px 10px 10px 10px;
-    position: relative;
-    top: 62px;
-    left: 270px;
-    width: calc(100vw - 270px);
-    min-height: calc(100vh - 62px);
     
+}
+
+.allpost{
+    font-family: 'Syne Tactile', cursive;
+    user-select: none;
+    cursor: progress;
+    text-align: center;
+    color: darkgray;
+    text-decoration: underline;
 }
 
 .questions::-webkit-scrollbar{
@@ -38,13 +42,13 @@
 }
 
 @media (max-width: 750px){
-    .questions{
-        top: 70px;
-        left: 0;
-        min-height: calc(100vh - 70px);
-        width: 100vw;
-    }
+    
     .question_header{
         display: block;
     }
+}
+@media (max-width: 420px){
+  .questions{
+    padding: 0;
+  }
 }

@@ -7,18 +7,19 @@ const QuestionPost = () => {
     const [photos, setPhotos] = useState([]);
     const [error, setError] = useState(null);
     const selectedPhotos = (e) => {
-        console.log(e.target.files);
         if (e.target.files.length > 2) {
             setError("Woaahh!! That's too many files try 2 or less than 2!!");
         } else if (e.target.files.length > 0) {
             setPhotos(e.target.files);
+            setError(null);
         } else {
             setPhotos([]);
+            setError('No photos selected');
         }
     };
     return (
         <div className="questionPost">
-            <h1 className="questionPost__title">Ask a question</h1>
+            <h1 className="questionPost__title userSelect">Ask a question</h1>
             {error && <h2 className="questionPost__error">{error}</h2>}
             <textarea
                 className="questionPost__input"
@@ -36,12 +37,15 @@ const QuestionPost = () => {
             />
             <div className="questionPost__detials">
                 <span
-                    className="questionPost__span"
+                    className="questionPost__span userSelect"
                     style={{ color: questionText.length < 250 ? 'lightgreen' : 'red' }}
                 >
                     {questionText.length}/300 words
                 </span>
-                <span className="questionPost__span" style={{ color: photos.length < 2 ? 'lightgreen' : 'red' }}>
+                <span
+                    className="questionPost__span userSelect"
+                    style={{ color: photos.length < 2 ? 'lightgreen' : 'red' }}
+                >
                     {photos.length}/2 photos
                 </span>
                 <label>
@@ -57,7 +61,7 @@ const QuestionPost = () => {
                     <PhotoIcon className="questionPost__input__photos" />
                 </label>
                 <span
-                    className="questionPost__span"
+                    className="questionPost__span userSelect"
                     style={{ display: 'none', visibility: 'hidden', color: 'skyblue' }}
                 >
                     Uploading 0/2(0%)

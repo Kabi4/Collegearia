@@ -10,7 +10,8 @@ import HelpIcon from '@material-ui/icons/Help';
 import LoyaltyIcon from '@material-ui/icons/Loyalty';
 import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 import PublishIcon from '@material-ui/icons/Publish';
-const Sidebar = () => {
+import { withRouter, NavLink } from 'react-router-dom';
+const Sidebar = (props) => {
     const [serachTerm, setSearchTerm] = useState('');
     const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 750px)').matches);
     const [showHeader, setShowHeader] = useState(false);
@@ -44,10 +45,12 @@ const Sidebar = () => {
                 className="sidebar"
                 style={{ top: isMobile ? (showHeader ? '0' : '-100%') : '62px', zIndex: showHeader ? '1200' : '0' }}
             >
-                <div className="sidebar__user">
-                    <Avatar alt="Avatar" src="" />
-                    <h2>User</h2>
-                </div>
+                <NavLink activeClassName="user_detialsActive" to={`${props.match.path}/user-details`}>
+                    <div className="sidebar__user">
+                        <Avatar alt="Avatar" src="" />
+                        <h2>User</h2>
+                    </div>
+                </NavLink>
                 <div className="sidebar_search">
                     <input
                         className="sidebar_search_input"
@@ -62,17 +65,25 @@ const Sidebar = () => {
                 </div>
                 <hr />
                 <div className="sidebar_Options">
-                    <SidebarOption active Icon={HomeIcon}>
+                    <SidebarOption to={`${props.match.path}/user-home`} Icon={HomeIcon}>
                         Home
                     </SidebarOption>
-                    <SidebarOption Icon={CreateIcon}>Your Questions</SidebarOption>
-                    <SidebarOption Icon={BorderColorIcon}>Your Answers</SidebarOption>
-                    <SidebarOption Icon={LoyaltyIcon}>Your Badges</SidebarOption>
-                    <SidebarOption Icon={HelpIcon}>Help</SidebarOption>
+                    <SidebarOption to={`${props.match.path}/user-questions`} Icon={CreateIcon}>
+                        Your Questions
+                    </SidebarOption>
+                    <SidebarOption to={`${props.match.path}/user-answers`} Icon={BorderColorIcon}>
+                        Your Answers
+                    </SidebarOption>
+                    <SidebarOption to={`${props.match.path}/user-bagde`} Icon={LoyaltyIcon}>
+                        Your Badges
+                    </SidebarOption>
+                    <SidebarOption to={`${props.match.path}/help`} Icon={HelpIcon}>
+                        Help
+                    </SidebarOption>
                 </div>
             </div>
         </>
     );
 };
 
-export default Sidebar;
+export default withRouter(Sidebar);

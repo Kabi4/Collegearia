@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-size: 16px;
-        background-color:#1C8E77;
+        background-color: whitesmoke;
         color: white;
         line-height:1;
         overflow-x: hidden;
@@ -17,4 +17,33 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         
     }
+body{
+    width:100vw;
+    height:100vh;
+}
+body::-webkit-scrollbar{
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: #eee;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}
+
+.userSelect{
+  user-select:none;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}
+
 `;

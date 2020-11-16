@@ -25,3 +25,7 @@ export { default as QuestionPost } from './QuestionPost/QuestionPost';
 export { default as Questions } from './Questions/Questions';
 export { default as Question } from './Question/Question';
 export { default as Replies } from './Replies/Replies';
+
+//BAGDES
+export { default as Badges } from './Badges/Badges';
+export { default as Badge } from './Badge/Badge';

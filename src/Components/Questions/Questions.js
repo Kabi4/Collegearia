@@ -49,8 +49,10 @@ const Questions = () => {
             {loading ? (
                 <Spinner />
             ) : (
-                <div className="questions">
+                <div className="browse__content questions">
                     <QuestionPost />
+                    <hr style={{ margin: '10px 0' }} />
+                    <h1 className="allpost">ALL POST</h1>
                     {questions.map((ele) => {
                         return (
                             <Question

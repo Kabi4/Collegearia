@@ -18,7 +18,13 @@
     font-size: 14px !important;
 }
 
-.sidebarOption:hover,.active{
+.sidebarOption:hover{
+    color:#482ff7 !important;
+    background-color: lightgray !important;
+    border-bottom: #482ff7 solid 1px;
+    border-radius: 4px;
+}
+.siderbar__option__active > div{
     color:#482ff7 !important;
     background-color: lightgray !important;
     border-bottom: #482ff7 solid 1px;

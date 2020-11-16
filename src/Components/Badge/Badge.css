@@ -1,0 +1,65 @@
+.badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    height: 250px;
+    width: 250px;
+    animation: moveBagde 8s linear infinite;
+    padding: 10px 0px;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 10px;
+    transition: all 0.2s linear;
+    user-select: none;
+    cursor: crosshair;
+}
+
+.badge:hover{
+    transition: all 0.2s linear;
+    animation: none;
+    transform: scale(1.07);
+}
+
+.badge__name{
+    color: gold;
+    text-shadow: 4px 4px 4px silver;font-family: 'Syne Tactile', cursive !important;
+}
+.badge__icon{
+    height: 100px !important;
+    width: 100px !important;
+    color: silver !important;
+}
+.badge__stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: gold !important;
+    
+}
+
+.badge__star{
+    margin: 4px !important;
+    box-shadow: 2px 2px 4px silver,-2px -2px 4px silver !important;
+}
+
+.badge__earned{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;font-family: 'Syne Tactile', cursive !important;
+}
+
+@keyframes moveBagde {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

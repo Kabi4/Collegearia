@@ -32,6 +32,10 @@
     background-color: lightgray;
 }
 
+.user_detialsActive > .sidebar__user{
+    background-color: lightgray;
+}
+
 .sidebar_search{
     display: flex;
     align-items: center;
@@ -113,4 +117,5 @@ hr{
         justify-content: center;
     }
 }
+
 
