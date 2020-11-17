@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Badge, Spinner } from '..';
 import LoyaltyIcon from '@material-ui/icons/Loyalty';
-import './Badges.css'; 
+import './Badges.css';  
 const Badges = () => {
     const [badges, setBadges] = useState([]); 
     const [loading, setLoading] = useState(true);
