@@ -3,7 +3,7 @@ import { Badge, Spinner } from '..';
 import LoyaltyIcon from '@material-ui/icons/Loyalty';
 import './Badges.css';
 const Badges = () => {
-    const [badges, setBadges] = useState([]);
+    const [badges, setBadges] = useState([]); 
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setBadges([
