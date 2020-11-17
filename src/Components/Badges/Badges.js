@@ -5,7 +5,7 @@ import './Badges.css';
 const Badges = () => {
     const [badges, setBadges] = useState([]); 
     const [loading, setLoading] = useState(true);
-    useEffect(() => {
+    useEffect(() => { 
         setBadges([
             {
                 badge: '10 UpVotes',
