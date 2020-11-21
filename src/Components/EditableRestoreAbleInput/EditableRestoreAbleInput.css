@@ -1,0 +1,54 @@
+.editable{
+    color: black !important;
+    display: flex;
+    font-family: 'Syne Tactile', cursive;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+.editable__title{
+    font-size: 20px;
+    font-weight: 900;
+    color: teal;
+
+}
+.editable__input{
+    z-index: 200;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    font-size: 14px;
+}
+.editable__input:-ms-input-placeholder,.editable__input::-webkit-input-placeholder{
+    color: red;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+
+.editable__confirmIcon{
+    z-index: 200;
+    cursor: pointer !important;
+    color: lawngreen !important;
+}
+.editable__titleactive{
+    z-index: 200; font-size: 16px;
+    font-weight: 900;
+    color: teal;
+}
+
+.editable__Value{
+    font-weight: 800;
+    font-size: 16px;
+    margin: 0 8px;
+}
+.editable__editIcon{
+    color: red !important;
+    cursor: pointer !important;
+    font-size: 18px !important;
+}
+

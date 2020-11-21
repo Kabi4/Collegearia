@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Badge, Spinner } from '..';
 import LoyaltyIcon from '@material-ui/icons/Loyalty';
-import './Badges.css';  
+import './Badges.css';
 const Badges = () => {
-    const [badges, setBadges] = useState([]); 
+    const [badges, setBadges] = useState([]);
     const [loading, setLoading] = useState(true);
-    useEffect(() => { 
+    useEffect(() => {
         setBadges([
             {
                 badge: '10 UpVotes',
@@ -23,7 +23,7 @@ const Badges = () => {
             <Spinner />
         </div>
     ) : (
-        <div className="browse__content badges">
+        <div className="browse__content badges topZero">
             {badges.length === 0 ? (
                 <h1 className="noBagde">No Badges Earn This far :(</h1>
             ) : (

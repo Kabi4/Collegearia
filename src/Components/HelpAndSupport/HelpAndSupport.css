@@ -1,0 +1,147 @@
+.helpandsupport{
+    color: black;
+    padding: 5px 20px;
+    min-height: auto !important;
+}
+.helpandsupport__title{
+    font-family: 'Syne Tactile', cursive;
+    user-select: none;
+    cursor: not-allowed;
+    position: relative;
+    top: 10px;
+    font-size: 34px;
+    text-align: center;
+    color: darkgray;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.helpandsupport__mail{
+    width: 550px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 10px;
+}
+.helpandsupport__comment{
+    width: 550px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 10px;
+    
+}
+
+
+fieldset {
+    background-color: #eeeeee;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    font-family: 'Syne Tactile', cursive;
+    padding: 5px 10px;
+}
+
+.helpsupport__mail__subject{
+    margin: 20px 0;
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+    transition: all 0.2s linear;
+    border-radius: 6px;
+    font-family:inherit;
+    letter-spacing: normal;
+}
+
+.helpsupport__mail__input{
+    margin: 20px 0;
+    resize: none;
+    height: 200px;
+    padding: 10px;
+    outline: none;
+    transition: all 0.2s linear;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    font-family:inherit;
+    letter-spacing: normal;
+}
+.helpsupport__mail__subject:focus,.helpsupport__mail__input:focus{
+    border: 1px solid lime;
+}
+
+.helpsupport__mail__send{
+    margin: 20px 0;
+    color: slategray !important;
+    background-color: black !important;
+    align-self: start;
+}
+
+.helpsupport__mail__send:disabled{
+    color: darkgrey !important;
+    background-color: aliceblue !important;
+}
+.comments__title{
+    font-family: 'Syne Tactile', cursive;
+    user-select: none;
+    cursor: not-allowed;
+    position: relative;
+    top: 10px;
+    font-size: 34px;
+    text-align: center;
+    color: darkgray;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.prevCommnets{
+    padding: 10px;
+}
+
+@media (max-width: 500px){
+    .helpandsupport__title{
+        font-size: 23px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 850px){
+    .helpandsupport__mail,.helpandsupport__comment{
+        width: 480px;
+    }
+}
+
+@media (max-width: 750px){
+    .helpandsupport__mail,.helpandsupport__comment{
+        width: 550px;
+    }
+}
+
+@media (max-width: 600px){
+    .helpandsupport__mail,.helpandsupport__comment{
+        width: 450px;
+    }
+    .helpandsupport__title{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 460px){
+    .helpandsupport__mail,.helpandsupport__comment{
+        width: 95vw;
+        margin: 0 10px;
+    }
+    .helpandsupport{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+}

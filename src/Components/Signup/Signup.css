@@ -1,0 +1,21 @@
+.signup__switch{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Syne Tactile', cursive;
+    color: darkgrey;
+    margin: 20px 0 !important;
+}
+.signup__button{
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        color: silver !important;
+        background-color: hotpink !important;
+        text-transform: none !important;
+}
+
+
+.signup__button:disabled{
+    color: darkgray !important;
+    background-color: lightgray !important;
+    cursor: not-allowed !important;
+}

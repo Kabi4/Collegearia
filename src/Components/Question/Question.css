@@ -33,6 +33,7 @@
     color: black;
     font-size: 14px;
     font-weight: 500;
+    text-align: left;
 }
 .question__body__image{
     width: 550px;
@@ -53,6 +54,7 @@
     padding: 0 20px;
     margin-bottom: 10px;
     align-items: center;
+    text-align: left;
 }
 
 .question__timeStamp{
@@ -92,6 +94,15 @@
     align-items: center;
     padding: 5px;
     flex: 0;
+}
+
+@media (max-width: 850px){
+    .question{
+        width: 480px;
+    }
+    .question__body__image{
+        width: 480px;
+    }
 }
 
 @media (max-width: 410px){

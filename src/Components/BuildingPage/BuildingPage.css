@@ -1,0 +1,35 @@
+.buildingPage{
+    display: grid;
+    place-items: center;
+    background-position: right;
+    background-repeat: no-repeat;font-family: 'Syne Tactile', cursive;
+    background-size: contain;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right,rgba(0,0,0,0.4),rgba(255,255,255,0.4)),url(./../../Assets/Images/PageUnderCOns.jpg);
+}
+.buildingPage__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+.buildingPage__header{
+    color:  rgb(9, 116, 94);margin: 30px;
+}
+.building__gif{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+@media(max-width: 750px){
+    .buildingPage{
+        align-items: start;
+        justify-items: center;
+        background-position: center;
+        background-image: linear-gradient(to bottom right,rgba(0,0,0,0.4),rgba(255,255,255,0.4)),url(./../../Assets/Images/ContructAlter.jpg);
+    }
+    .buildingPage__header{
+        margin: 140px 0;
+        text-align: center;
+    }
+}

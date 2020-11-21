@@ -27,4 +27,8 @@
     .noBagde{
         display: block;
     }
+    .badges{
+        min-height: 100vh;
+        width: 100vw;
+    }
 }

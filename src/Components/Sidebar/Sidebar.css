@@ -24,7 +24,7 @@
 }
 .sidebar__user > h2{
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 10px;
 }
 
@@ -98,6 +98,15 @@ hr{
     padding:10px;
 }
 
+.swipeUp{
+    color: darkred;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 1px 1px 2px red;
+    text-decoration: underline;
+    display: none;
+}
 
 @media(max-width: 750px){
     .sidebar{
@@ -115,6 +124,9 @@ hr{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .swipeUp{
+        display: block;
     }
 }
 

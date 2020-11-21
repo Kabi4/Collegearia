@@ -5,7 +5,8 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import { Backdrop } from '../../Utils/index';
 import { NacItemOptions } from '../index';
 import FlipMove from 'react-flip-move';
-const Navitem = React.memo(({ children, isExpandable, options }) => {
+import { Link } from 'react-router-dom';
+const Navitem = React.memo(({ children, to, isExpandable, options }) => {
     const [showIcons, setShowIcons] = useState(false);
     return (
         <div className="navitem">
@@ -36,7 +37,20 @@ const Navitem = React.memo(({ children, isExpandable, options }) => {
                 <FlipMove enterAnimation="accordionVertical" leaveAnimation="accordionVertical">
                     {showIcons &&
                         options.map((ele, index) => {
-                            return <NacItemOptions key={index}>{ele}</NacItemOptions>;
+                            return (
+                                <Link
+                                    onClick={() => {
+                                        setShowIcons((prevState) => {
+                                            return !prevState;
+                                        });
+                                    }}
+                                    to={{
+                                        pathname: `/${to}/` + ele.split(' ').join('-').toLowerCase(),
+                                    }}
+                                >
+                                    <NacItemOptions key={index}>{ele}</NacItemOptions>
+                                </Link>
+                            );
                         })}
                 </FlipMove>
             </div>

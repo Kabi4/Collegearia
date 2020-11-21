@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
 import './Body.css';
-const Body = () => {
+const Body = ({ additionalClass }) => {
     return (
-        <div className="body">
+        <div className={`body ${additionalClass?.join(' ')}`}>
             <h1 className="body__header__primary">Wandering About what should you do?</h1>
             <h2 className="body__header__secondary">It's never bad to ask your Senior.........</h2>
             <p className="body__header__content">

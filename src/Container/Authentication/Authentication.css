@@ -1,0 +1,81 @@
+.authenticate__error{
+    font-size: 12px;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Syne Tactile', cursive;
+    user-select: none;
+    color: red;
+    
+}
+
+.authentication__container{
+    display: grid;
+    place-items: center;height: 100vh;
+    width: 100vw;
+}
+
+.authentication{
+    color: black;
+    display: flex;
+    background-color: rgb(243, 243, 183);
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 8px 8px 40px black;
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid lightgray;
+    width: 400px;
+    min-height: 500px;
+    justify-content: center;
+}
+
+.authentication__auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authentication__auth > *{
+    margin: 10px 0px;
+}
+
+.authentication__auth > input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.678);
+    font-weight: 700;
+    border-radius: 6px;
+    width: 300px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.authentication__auth > input::-webkit-input-placeholder{
+    color: darkgray;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.authentication__auth > input:focus{
+    border-bottom: 2px solid lawngreen;
+}
+
+.authentication__logo{
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    margin: 10px 0;
+    border-radius: 99.99%;
+}
+.authentication__title{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Syne Tactile', cursive;
+    color: silver;
+    text-shadow: 2px 2px 10px gold;
+    margin: 10px 0;
+}

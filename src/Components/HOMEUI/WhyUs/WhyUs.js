@@ -1,8 +1,8 @@
 import React from 'react';
 import './WhyUs.css';
-const WhyUs = () => {
+const WhyUs = ({ additionalClass }) => {
     return (
-        <div className="whyus">
+        <div className={`whyus ${additionalClass?.join(' ')}`}>
             <h1>Why Choose us?</h1>
             <h3>- We think outside the box</h3>
             <h3>- Connect college peoples together</h3>
